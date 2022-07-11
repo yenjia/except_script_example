@@ -1,0 +1,10 @@
+#!/usr/bin/expect
+
+spawn sudo openconnect --protocol=nc --reconnect-timeout sslvpn.ntu.edu.tw -u r10946007
+expect "*youname"
+send "YouPasswd\r"
+expect "NTU EMail Account|NTUCC Internal"
+send "NTU EMail Account\r"
+expect "password:"
+send "YourVpnPasswd\r"
+interact
