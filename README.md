@@ -1,4 +1,4 @@
-# except_script_example
+# Except script example
 ### VPN except script example (openconnect)
 
 * Install Expect Script first
